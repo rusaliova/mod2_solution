@@ -16,16 +16,30 @@ body {
 	padding: 0;
 }
 h1 {
-	margin-bottom: 15px;
+	margin-bottom: 35px;
 }
 p{
-	border: 1px solid black;
+	border: 0;
 	background-color: #A52A2A;
 	width: 90%;
-	height: 150px;
-	margin: 20px;
+	height: auto;
+	margin-bottom: 20px;
 	font-family: Helvetica;
 	color: white;
+}
+#box {
+	background-color: yellow;
+	padding: 0
+	border: 1px solid black;
+	margin: 10px;
+    width: 50px;
+    height: 20px
+}
+#content {
+	background-color: 0
+	font-family: Helvetica;
+	color: white;
+	margin-bottom: 25px;
 }
 
 /***** Simple Responsible Framework ****/
@@ -76,7 +90,6 @@ p{
   	width: 100%
   }
 }
-
 /***** Medium styles ****/
 @media (min-width: 768px) and (max-width: 991px) {
  	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
@@ -120,7 +133,6 @@ p{
   	width: 100%
   }
 }
-  
   /***** Small styles ****/
 @media (max-width: 767px) {
  	.col-sd-1, .col-sd-2, .col-sd-3, .col-sd-4, .col-sd-5, .col-sd-6, .col-sd-7, .col-sd-8, .col-sd-9, .col-sd-10, .col-sd-11, .col-sd-12 {
@@ -177,6 +189,9 @@ p{
 и терпим всю боль, расставанья, измены...
 Ждем чуда, погоды и авиарейсы,
 глядим в небеса, в уходящие рельсы...</p></div>
+<div id="box">
+<div id="content"> Столбец 1</div>
+	</div>
 <div class="col-lg-4 col-md-6 col-sd-12"><p>Стараемся выглядеть и вдохновляться,
 еще – не стареть, забывать, улыбаться...
 Теряем перчатки, воздушность, часы,
@@ -185,12 +200,18 @@ p{
 жалеть, сострадать, вдохновлять, соблазнять...
 Находим записочки и приключения,
 скрываем свой возраст, обман, увлечения...</p></div>
+<div id="box">
+<div id="content"> Столбец 2</div>
+	</div>
 <div class="col-lg-4 col-md-6 col-sd-12"><p>Посуду и книги, еду подкупаем,
 в своей нереальности часто витаем,
 в сомненьях, бессоннице, самооценке,
 и волосы красим в любые оттенки...
 А между всем этим мы верим в любовь,
 страдаем, клянём, и... влюбляемся вновь.</p></div>
+    <div id="box">
+<div id="content"> Столбец 3</div>
+	</div>
 </div>
   </body>
 </html>
