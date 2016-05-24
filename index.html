@@ -10,13 +10,17 @@
 /***** Base styles ****/
 * {
 	box-sizing: border-box;
-}
-body {
 	margin: 0;
 	padding: 0;
 }
+body {
+	
+}
 h1 {
 	margin-bottom: 35px;
+}
+div#container {
+	background-color: 0;
 }
 p{
 	border: 0;
@@ -34,8 +38,9 @@ p{
 	margin: 10px;
     width: 100px;
     height: 25px;
-    position: relative;
-    bottom: right
+    position: absolute;
+    top: 100px;
+    left: 100px;
 }
 #p2 {
 	background-color: gray;
@@ -44,8 +49,9 @@ p{
 	margin: 10px;
     width: 100px;
     height: 25px;
-    position: relative;
-    bottom: right
+    position: absolute;
+    top: 100px;
+    left: 300px;
 }
 #p3 {
 	background-color: green;
@@ -54,8 +60,9 @@ p{
 	margin: 10px;
     width: 100px;
     height: 25px;
-    position: relative;
-    bottom: right
+    position: absolute;
+    top: 100px;
+    left: 500px;
 }
 
 /***** Simple Responsible Framework ****/
@@ -220,8 +227,11 @@ p{
 А между всем этим мы верим в любовь,
 страдаем, клянём, и... влюбляемся вновь.</p></div>
 </div>
-    <div id="p1"><p>Столбец 1</p></div>
-    <div id="p2"><p>Столбец 1</p></div>
-    <div id="p3"><p>Столбец 1</p></div>	
+ <div id="container">
+    <p id="p1">Столбец 1</p>
+    <p id="p2">Столбец 2</p>
+    <p id="p3">Столбец 3</p>
+ </div>
+    	
   </body>
 </html>
