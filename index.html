@@ -10,77 +10,67 @@
 /***** Base styles ****/
 * {
 	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 }
 h1 {
 	margin-bottom: 35px;
+  text-align: center;
+  color: darkblue;
 }
 body{
-	background-color: 0;
+	background-color: 0px;
+  font-family: Helvetica;
 }
 div#container {
-	background-color: 0;
+	background-color: 0px;
 	position: relative;
 }
 .columnHeader {
- color: green; 
+ padding: 5px;
+ margin-left: auto;
+ margin-right: -5px;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ width: 30%;
+ text-align: center;
+ position: relative;
+ border-left: solid black 3px;
+ border-bottom: solid black 3px;
 }
-p{
-	border: 0;
-	background-color: #A52A2A;
-	width: 90%;
-	height: 200px;
-	margin: 0px;
-	padding: 20px 30px 20px 20px;
-	font-family: Helvetica;
-	color: white;
+.article {
+  height: 200px;
+  background-color: skyblue;
+  color: darkblue;
+  margin: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  border: solid black 3px;
 }
-#p1 {
-	background-color: yellow;
-	padding: 5px 5px 5px 5px;
-	border: 1px solid black;
-	margin: 10px;
-    width: 100px;
-    height: 25px;
-    position: absolute;
-    top: -10px;
-    left: 310px;
-    color: black;
+#s1{
+ color: darkblue;
+ background-color: white;
 }
-#p2 {
-	background-color: gray;
-	padding: 5px 5px 5px 5px;
-	border: 1px solid black;
-	margin: 10px;
-    width: 100px;
-    height: 25px;
-    position: absolute;
-    top: -10px;
-    left: 740px;
+#s2{
+ color: darkblue;
+ background-color: yellow;
 }
-#p3 {
-	background-color: green;
-	padding: 5px 5px 5px 5px;
-	border: 1px solid black;
-	margin: 10px;
-    width: 100px;
-    height: 25px;
-    position: absolute;
-    top: -10px;
-    right: 0px;
+#s3{
+ color: darkblue;
+ background-color: sandybrown;
 }
 
 /***** Simple Responsible Framework ****/
 .row {
-	width: 100%
+	width: 100%;
+  height: 200px; 
 }
 
 /***** Lage styles ****/
 @media (min-width: 992px) {
  	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
   	float: left;
-  	border: 1px solid black;
   }
   .col-lg-1 {
   	width: 8,33%
@@ -123,7 +113,6 @@ p{
 @media (min-width: 768px) and (max-width: 991px) {
  	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
   	float: left;
-  	border: 1px solid black;
   }
   .col-md-1 {
   	width: 8,33%
@@ -166,7 +155,6 @@ p{
 @media (max-width: 767px) {
  	.col-sd-1, .col-sd-2, .col-sd-3, .col-sd-4, .col-sd-5, .col-sd-6, .col-sd-7, .col-sd-8, .col-sd-9, .col-sd-10, .col-sd-11, .col-sd-12 {
   	float: left;
-  	border: 1px solid black;
   }
   .col-sd-1 {
   	width: 8,33%
@@ -210,36 +198,35 @@ p{
     <body>
     <h1> Мы верим в любовь!</h1>
 <div class="row">
-<div class="col-lg-4 col-md-6 col-sd-12"><p>Меняем прически, духи, телефоны,
+<div class="col-lg-4 col-md-6 col-sd-12">
+  <div class="article"><p class="columnHeader" id="s1">Столбец-1</p>
+   <p>Меняем прически, духи, телефоны,
 наряды, соседей, прописки, районы...
 Заводим котов, орхидеи, мужчин,
 друзей, эксклюзивные марки машин...
 Рожаем идеи, детей и проблемы,
 и терпим всю боль, расставанья, измены...
 Ждем чуда, погоды и авиарейсы,
-глядим в небеса, в уходящие рельсы...</p></div>
-<div class="col-lg-4 col-md-6 col-sd-12"><p>Стараемся выглядеть и вдохновляться,
+глядим в небеса, в уходящие рельсы...</p></div></div>
+<div class="col-lg-4 col-md-6 col-sd-12">
+  <div class="article"><p class="columnHeader" id="s2">Столбец-2</p>
+   <p>Стараемся выглядеть и вдохновляться,
 еще – не стареть, забывать, улыбаться...
 Теряем перчатки, воздушность, часы,
 становимся старше, мудрей, на весы...
 И учимся видеть, готовить, вязать,
 жалеть, сострадать, вдохновлять, соблазнять...
 Находим записочки и приключения,
-скрываем свой возраст, обман, увлечения...</p></div>
-<div class="col-lg-4 col-md-6 col-sd-12">
-  <p class="columnHeader">Столбец-3</p>
+скрываем свой возраст, обман, увлечения...</p></div></div>
+<div class="col-lg-4 col-md-12 col-sd-12">
+  <div class="article">
+    <p class="columnHeader" id="s3">Столбец-3</p>
     <p>Посуду и книги, еду подкупаем,
 в своей нереальности часто витаем,
 в сомненьях, бессоннице, самооценке,
 и волосы красим в любые оттенки...
 А между всем этим мы верим в любовь,
-страдаем, клянём, и... влюбляемся вновь.</p></div>
-</div>
- <!--div id="container">
-    <p id="p1">Столбец 1</p>
-    <p id="p2">Столбец 2</p>
-    <p id="p3">Столбец 3</p>
- </div--> 
-    	
+страдаем, клянём, и... влюбляемся вновь.</p></div></div>
+</div>  	
   </body>
 </html>
