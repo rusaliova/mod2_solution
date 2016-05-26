@@ -26,8 +26,8 @@ div#container {
  width: 30%;
  text-align: center;
  position: relative;
- border-left: solid black 3px;
- border-bottom: solid black 3px;
+ border-left: solid black 1px;
+ border-bottom: solid black 1px;
 }
 .article {
   height: 200px;
@@ -37,7 +37,7 @@ div#container {
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 5px;
-  border: solid black 3px;
+  border: solid black 1px;
 }
 #s1{
  color: darkred;
